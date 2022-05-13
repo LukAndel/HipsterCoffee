@@ -1,3 +1,5 @@
+$border: red solid 1px;
+
 html {
     box-sizing: border-box;
 }
@@ -76,4 +78,62 @@ body {
 .footer__text {
     margin-bottom: 3em;
     margin-top: 0;
+}
+
+.content__container {
+    max-width: 80%;
+    margin: auto;
+}
+
+.menu {
+    border: green solid 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.menu__box {
+    border: blue solid 1px;
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-evenly;
+    flex-wrap: wrap;
+    &:nth-child(1) {order: 1;}
+    &:nth-child(2) {order: 3;}
+    &:nth-child(3) {order: 4;}
+    &:nth-child(4) {order: 2;}
+    &:nth-child(5) {order: 5;}
+    &_container,
+    &_container-one {
+        border: $border;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        
+
+        &-title {
+            
+        }
+        &-beverages {
+
+        }
+    }
+}
+
+.menu__item {
+    border: $border;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &-price {
+        width: 1.8em;
+        
+    }
+}
+
+.menu__one {
+
 }
