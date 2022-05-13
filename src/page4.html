@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coffee page</title>
+    <title>Our Story page</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
       rel="stylesheet"
@@ -163,94 +163,78 @@
         <nav class="header__nav">
           <a class="header__links" href="page1.html">Home</a>
           <a class="header__links" href="page2.html">Menu</a>
-          <a class="header__links header__links--current" href="page3.html">Coffee</a>
-          <a class="header__links" href="page4.html">Our Story</a>
+          <a class="header__links" href="page3.html">Coffee</a>
+          <a class="header__links header__links--current" href="page4.html"
+            >Our Story</a
+          >
         </nav>
       </div>
     </header>
-    <main class="coffee">
-      <h1 class="coffee__title">Coffee</h1>
-      <p class="coffee__description">
-        We work with specialty coffee from current crops which is carefully
-        roasted. Our coffee is fruity, juicy and never boring. We bring you the
-        best from leading european specialty roasteries, currently mostly from <a class="coffee__link" href="https://shop.squaremilecoffee.com/">
-        Square Mile Coffee Roasters</a>, a multi award winning coffee roasting
-        company based in East London.
-      </p>
-      <p class="coffee__description coffee__description--small">
-        You can currently buy these beans in 350g bags.
+    <main class="our-story">
+      <h1 class="our-story__title">Our Story</h1>
+      <div class="our-story__images">
+        <div class="our-story__profile">
+          <img src="img/lukas.jpeg" alt="" class="our-story__image" />
+          <p class="our-story__name">Lukas Andel</p>
+        </div>
+        <div class="our-story__profile">
+          <img src="img/katja.jpeg" alt="" class="our-story__image" />
+          <p class="our-story__name">Katja Zenker</p>
+        </div>
+        <div class="our-story__profile">
+          <img src="img/katka.png" alt="" class="our-story__image" />
+          <p class="our-story__name">Ekaterina Melnichuk</p>
+        </div>
+      </div>
+      <p class="our-story__text">
+        GHC started as a project of three friends and passionate baristas,
+        Ekaterina, Katja & Lukas in 2010. Believing as much in the hand of an
+        educated barista as in the innovative equipment of the our ever-growing
+        industry, GHC offers a full spectrum of brewing opportunities – from
+        pour overs to syphon pots to finely executed espresso beverages. Each
+        cup of coffee is made with love, precision and care.
       </p>
 
-      <div class="coffee__boxes">
-        <div class="coffee__box">
-          <h2 class="coffee__subtitle">Quejina (Guatemala)</h2>
-          <img src="img/smcr-quejina.jpg" alt="" class="coffee__image" />
-          <div class="coffee__text">
-            <p class="coffee__paragraph coffee__paragraph--italic">
-              redcurrant/honeysuckle/juicy
-            </p>
-            <p class="coffee__paragraph">
-              Fruity redcurrant and sweet honeysuckle flavours. An incredibly
-              juicy coffee which we struggled to decide on the right berry
-              descriptor, but raspberry, blackberry and blueberry were also in
-              the running!
-            </p>
-          </div>
-        </div>
-        <div class="coffee__box">
-          <h2 class="coffee__subtitle">Mormora (Ethiopia)</h2>
-          <img src="img/smcr-mormora.jpg" alt="" class="coffee__image" />
-          <div class="coffee__text">
-            <p class="coffee__paragraph coffee__paragraph--italic">
-              blackberry/orange/silky
-            </p>
-            <p class="coffee__paragraph">
-              Fruity, sweet notes of dried mango, strawberry and passionfruit
-              sit alongside a delicious creamy mouthfeel making this a tasty
-              summer Ethiopian, hot or cold.
-            </p>
-          </div>
-        </div>
-        <div class="coffee__box">
-          <h2 class="coffee__subtitle">Kamwangi (Kenya)</h2>
-          <img src="img/smcr-kamwangi.jpg" alt="" class="coffee__image" />
-          <div class="coffee__text">
-            <p class="coffee__paragraph coffee__paragraph--italic">
-              blackberry/orange/silky 
-            </p>
-            <p class="coffee__paragraph">
-              This is one fruit filled espresso! From citrus fruits, such as orange, grapefruit and clementine, to berries of the black, blue and red variety, this is fruit turned up to 11, all wrapped up in a silky smooth body. 
-            </p>
-          </div>
-        </div>
-        <div class="coffee__box">
-          <h2 class="coffee__subtitle">Decaf Espresso (El Salvador)</h2>
-          <img src="img/smcr-decaf-espresso.jpg" alt="" class="coffee__image" />
-          <div class="coffee__text">
-            <p class="coffee__paragraph coffee__paragraph--italic">
-              caramel/apple/cinnamon
-            </p>
-            <p class="coffee__paragraph">
-              This is a single origin espresso from San Carlos in El Salvador,
-              think sweet caramel and apple notes alongside sprinklings of
-              cinnamon in the finish.
-            </p>
-          </div>
-        </div>
+      <div class="our-story__contact">
+        <h2 class="our-story__subtitle">CONTACT US</h2>
+        <form action="img/the-lucky-neko-rplhB9mYF48-unsplash.jpg" class="our-story__form">
+          <label for="name" class="our-story__label">Name *
+            <input class="our-story__input" type="text" class="our-story__input" required placeholder="John"/>
+          </label>
+
+          <label for="name" class="our-story__label">Surname *
+            <input class="our-story__input" id="name" type="text" class="our-story__input" placeholder="Doe" required/>
+          </label>
+
+          <label for="email" class="our-story__label">Email *
+            <input class="our-story__input" id="email" type="email" class="our-story__input" placeholder="some@email.com" required/>
+          </label>
+
+          <label for="phone" class="our-story__label">Phone
+            number
+            <input class="our-story__input" id="phone" type="text" class="our-story__input" placeholder="+420 775 000 000"/>
+          </label>
+
+          <label for="message" class="our-story__label">Your message *
+            <textarea required class="our-story__input our-story__input--wide" name="message" id="message" placeholder="Type your message..."></textarea>
+          </label>
+
+          <input type="submit" class="our-story__submit" value="SUBMIT FORM">
+        </form>
       </div>
     </main>
 
     <footer class="footer">
       <nav class="footer__group">
-        <a class="footer__link" href="page1.html">Home</a>
-        <a class="footer__link" href="page2.html">Menu</a>
-        <a class="footer__link footer__link--current" href="page3.html">Coffee</a>
-        <a class="footer__link" href="page4.html">Our Story</a>
+        <a class="footer__link" href="#">Home</a>
+        <a class="footer__link" href="#">Menu</a>
+        <a class="footer__link" href="#">Coffee</a>
+        <a class="footer__link footer__link--current" href="#">Our Story</a>
       </nav>
       <h3>#HIPSTERSMAKECOFFEE</h3>
       <p class="footer__text">
-        Follow us on <a class="footer__link" href="https://twitter.com/">Twitter</a> and
-        <a class="footer__link" href="https://www.instagram.com/?hl=en">Instagram</a>
+        Follow us on <a class="footer__link" href="#">Twitter</a> and
+        <a class="footer__link" href="">Instagram</a>
       </p>
     </footer>
   </body>
