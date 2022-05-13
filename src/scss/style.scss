@@ -47,6 +47,10 @@ body {
 .header__links {
     text-decoration: none;
     color: #838484;
+
+    &--current {
+      color: black;
+    }
 }
 
 .header__logo {
@@ -71,9 +75,84 @@ body {
 
 .footer__link {
     color: #0293F2;
+
+    &--current  {
+      color: white;
+      text-decoration: none;
+    }
 }
 
 .footer__text {
     margin-bottom: 3em;
     margin-top: 0;
+}
+
+$light_grey: #F0F1F1;
+$lighter_grey: #F8F9F9;
+
+.coffee {
+
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 100;
+
+  &__title  {
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+
+  &__description--small {
+    font-size: 0.8em;
+  }
+
+  &__link {
+    color: #0293F2;
+    text-decoration: underline;
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+    font-weight: 100;
+    background-color: $light_grey;
+    padding: 0.5em;
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid rgb(223, 223, 223);
+
+  }
+
+  &__text {
+    background-color: $lighter_grey;
+    padding: 0.5em;
+  }
+
+  &__paragraph {
+    font-size: 0.8em;
+
+    &--italic {
+      font-style: italic;
+    }
+  }
+
+  &__boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 1.5em;
+  }
+
+  &__box {
+    width: 45%;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+
+
+
+
+
 }
