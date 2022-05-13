@@ -42,8 +42,6 @@ body {
     display: flex;
     flex-direction: row;
     column-gap: 1em;
-
-
 }
 
 .header__links {
@@ -86,32 +84,35 @@ body {
 }
 
 .menu {
-    border: green solid 1px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    // flex: 49%
 
+}
+.menu__side {
+    display: flex;
 }
 
 .menu__box {
-    border: blue solid 1px;
     display: flex;
-    flex-direction: row;
-    // justify-content: space-evenly;
+    flex-direction: column;
     flex-wrap: wrap;
-    &:nth-child(1) {order: 1;}
-    &:nth-child(2) {order: 3;}
-    &:nth-child(3) {order: 4;}
-    &:nth-child(4) {order: 2;}
-    &:nth-child(5) {order: 5;}
-    &_container,
-    &_container-one {
-        border: $border;
+    // &:nth-child(1) {order: 1;}
+    // &:nth-child(2) {order: 3;}
+    // &:nth-child(3) {order: 4;}
+    // &:nth-child(4) {order: 2;}
+    // &:nth-child(5) {order: 5;}
+    &_container {
+        // border: $border;
         display: flex;
         flex-direction: column;
-        width: 40%;
-        
+    }
+    &_container-one {
+        display: flex;
+        flex-direction: column;
+               
 
         &-title {
             
@@ -123,8 +124,7 @@ body {
 }
 
 .menu__item {
-    border: $border;
-    width: 200px;
+    // width: 200px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -134,6 +134,42 @@ body {
     }
 }
 
-.menu__one {
+.menu__one,
+.menu__two {
+    display: flex;
+    flex-direction: row;
 
+}
+
+.menu__side_right {
+    // border: $border;
+}
+
+.menu__box_container-title,
+.menu__box_title {
+    font-weight: lighter;
+}
+
+
+@media screen and (max-width: 480px) {
+    .menu__box_container {
+        display: none;
+    }
+    .menu__one:nth-child(2) {
+        display: none;
+    }
+    .menu__box_container-one {
+        margin: auto;
+    }
+    .menu {
+        width: 100%;
+        margin: auto;
+    }
+    .content__container {
+        width: 100%;
+        margin: auto;     
+    }
+    .menu__item {
+        width: 320px;
+    }
 }
